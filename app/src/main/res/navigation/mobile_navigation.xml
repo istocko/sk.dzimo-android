@@ -23,6 +23,12 @@
         tools:layout="@layout/fragment_email" />
 
     <fragment
+        android:id="@+id/nav_playlist"
+        android:name="sk.dzimo.ui.playlist.PlaylistFragment"
+        android:label="@string/menu_playlist"
+        tools:layout="@layout/fragment_playlist" />
+
+    <fragment
         android:id="@+id/nav_facebook"
         android:name="sk.dzimo.ui.facebook.FacebookFragment"
         android:label="@string/menu_facebook"

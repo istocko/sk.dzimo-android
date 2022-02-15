@@ -9,6 +9,7 @@
 
     <string name="menu_home">Domovská webstránka</string>
     <string name="menu_about">O mne</string>
+    <string name="menu_playlist">Moje Mixy</string>
     <string name="menu_email">E-mail</string>
     <string name="menu_facebook">Facebook</string>
     <string name="menu_youtube">Youtube</string>
