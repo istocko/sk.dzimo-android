@@ -13,8 +13,13 @@
             android:icon="@drawable/ic_facebook"
             android:title="@string/menu_facebook" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_youtube"
             android:icon="@drawable/ic_menu_youtube"
             android:title="@string/menu_youtube" />
+
+        <item
+            android:id="@+id/nav_patreon"
+            android:icon="@drawable/ic_patreon"
+            android:title="@string/menu_patreon" />
     </group>
 </menu>
