@@ -1,16 +1,16 @@
-package sk.dzimo.ui.gallery;
+package sk.dzimo.ui.facebook;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class FacebookViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public FacebookViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("https://sk-sk.facebook.com/djdzimo/");
     }
 
     public LiveData<String> getText() {

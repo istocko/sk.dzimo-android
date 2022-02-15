@@ -1,4 +1,4 @@
-package sk.dzimo.ui.slideshow;
+package sk.dzimo.ui.youtube;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,20 +11,19 @@ import android.support.v4.app.Fragment;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 
-import sk.dzimo.R;
-import sk.dzimo.databinding.FragmentSlideshowBinding;
+import sk.dzimo.databinding.FragmentYoutubeBinding;
 
-public class SlideshowFragment extends Fragment {
+public class YoutubeFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
-    private FragmentSlideshowBinding binding;
+    private YoutubeViewModel slideshowViewModel;
+    private FragmentYoutubeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(SlideshowViewModel.class);
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(YoutubeViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentYoutubeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;

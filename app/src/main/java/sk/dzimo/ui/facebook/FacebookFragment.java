@@ -1,4 +1,4 @@
-package sk.dzimo.ui.gallery;
+package sk.dzimo.ui.facebook;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,20 +11,20 @@ import android.support.v4.app.Fragment;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 
-import sk.dzimo.R;
-import sk.dzimo.databinding.FragmentGalleryBinding;
+import sk.dzimo.databinding.FragmentFacebookBinding;
 
-public class GalleryFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
-    private FragmentGalleryBinding binding;
+public class FacebookFragment extends Fragment {
+
+    private FacebookViewModel galleryViewModel;
+    private FragmentFacebookBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(GalleryViewModel.class);
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(FacebookViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentFacebookBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;

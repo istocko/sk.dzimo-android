@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="sk.dzimo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_facebook"
+        android:name="sk.dzimo.ui.facebook.FacebookFragment"
+        android:label="@string/menu_facebook"
+        tools:layout="@layout/fragment_facebook" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="sk.dzimo.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="sk.dzimo.ui.youtube.YoutubeFragment"
+        android:label="@string/menu_youtube"
+        tools:layout="@layout/fragment_youtube" />
 </navigation>

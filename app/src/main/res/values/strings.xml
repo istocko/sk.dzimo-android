@@ -8,6 +8,6 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Domovska stranka</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_facebook">Facebook</string>
+    <string name="menu_youtube">Youtube</string>
 </resources>
