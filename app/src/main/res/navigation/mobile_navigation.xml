@@ -16,6 +16,11 @@
         android:name="sk.dzimo.ui.about.AboutFragment"
         android:label="@string/menu_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_email"
+        android:name="sk.dzimo.ui.email.EmailFragment"
+        android:label="@string/menu_email"
+        tools:layout="@layout/fragment_email" />
 
     <fragment
         android:id="@+id/nav_facebook"
