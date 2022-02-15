@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_about"
+        android:name="sk.dzimo.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
         android:id="@+id/nav_facebook"
         android:name="sk.dzimo.ui.facebook.FacebookFragment"
         android:label="@string/menu_facebook"
