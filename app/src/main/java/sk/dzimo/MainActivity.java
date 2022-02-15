@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
-        binding.appBarMain.fab.setOnClickListener(view -> Snackbar.make(view, "Email dj.dzimo@gmail.com", Snackbar.LENGTH_LONG)
+        binding.appBarMain.fab.setOnClickListener(view -> Snackbar.make(view, "©2022 @extremesystems.sk", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_facebook, R.id.nav_youtube)
+                R.id.nav_home, R.id.nav_about, R.id.nav_playlist, R.id.nav_email, R.id.nav_facebook, R.id.nav_youtube, R.id.nav_patreon)
                 //.setOpenableLayout(drawer)
                 .setDrawerLayout(drawer)
                 .build();
