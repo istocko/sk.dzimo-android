@@ -40,7 +40,7 @@ public class SplashActivity  extends Activity {
                     ignored.printStackTrace();
                 }
             }
-        }, 3000);  // Give a 5 seconds delay.
+        }, 500);  // Give a 5 seconds delay.
     }
 
     @Override
