@@ -12,7 +12,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import sk.dzimo.ActionOpenURLInChrome;
 import sk.dzimo.databinding.FragmentYoutubeBinding;
+import sk.dzimo.ui.email.EmailFragment;
 
 public class YoutubeFragment extends Fragment {
 
@@ -34,6 +36,8 @@ public class YoutubeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome("https://www.youtube.com/channel/UCzQNBCfsiGL-Ax-LCcluI9Q", binding.urlYoutubeButton, YoutubeFragment.this);
         return root;
     }
 

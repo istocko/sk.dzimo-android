@@ -23,12 +23,11 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="420dp"
-        android:layout_height="432dp"
+        android:layout_width="407dp"
+        android:layout_height="341dp"
         android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/clef_square"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="129dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView

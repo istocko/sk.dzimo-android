@@ -14,7 +14,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import sk.dzimo.ActionOpenURLInChrome;
 import sk.dzimo.databinding.FragmentPatreonBinding;
+import sk.dzimo.ui.youtube.YoutubeFragment;
 
 public class PatreonFragment extends Fragment {
 
@@ -36,6 +38,8 @@ public class PatreonFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome( "https://www.patreon.com/djdzimo", binding.urlPatreonButton, PatreonFragment.this);
         return root;
     }
 

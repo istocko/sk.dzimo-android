@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,7 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import sk.dzimo.ActionOpenURLInChrome;
 import sk.dzimo.databinding.FragmentEmailBinding;
+import sk.dzimo.ui.playlist.PlaylistFragment;
 
 public class EmailFragment extends Fragment {
 
@@ -35,6 +38,12 @@ public class EmailFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        final ImageButton ib = binding.urlEmailButton;
+        String url = "mailto:dj.dzimo@gmail.com";
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome(url, ib, EmailFragment.this);
+
+
         return root;
     }
 

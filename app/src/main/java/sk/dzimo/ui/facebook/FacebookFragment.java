@@ -11,7 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import sk.dzimo.ActionOpenURLInChrome;
 import sk.dzimo.databinding.FragmentFacebookBinding;
+import sk.dzimo.ui.patreon.PatreonFragment;
 
 
 public class FacebookFragment extends Fragment {
@@ -34,6 +36,8 @@ public class FacebookFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome( "https://sk-sk.facebook.com/djdzimo/", binding.urlFacebookButton, FacebookFragment.this);
         return root;
     }
 

@@ -10,9 +10,12 @@ import androidx.lifecycle.ViewModelProvider;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import sk.dzimo.ActionOpenURLInChrome;
 import sk.dzimo.databinding.FragmentPlaylistBinding;
+import sk.dzimo.ui.home.HomeFragment;
 
 public class PlaylistFragment extends Fragment {
 
@@ -34,6 +37,10 @@ public class PlaylistFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        final ImageButton ib = binding.urlPLaylistButton;
+        String url = "https://www.dzimo.sk/playlist.html";
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome(url, ib, PlaylistFragment.this);
         return root;
     }
 
