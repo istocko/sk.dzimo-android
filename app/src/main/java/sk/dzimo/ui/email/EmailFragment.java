@@ -39,9 +39,9 @@ public class EmailFragment extends Fragment {
             }
         });
 
-        final ImageButton ib = binding.urlEmailButton;
-        String url = "mailto:dj.dzimo@gmail.com";
-        ActionOpenURLInChrome a = new ActionOpenURLInChrome(url, ib, EmailFragment.this);
+        //final ImageButton ib = binding.urlEmailButton;
+        //String url = "mailto:dj.dzimo@gmail.com";
+        //ActionOpenURLInChrome a = new ActionOpenURLInChrome(url, ib, EmailFragment.this);
 
 
         return root;
