@@ -1,10 +1,12 @@
 package sk.dzimo;
 
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -40,7 +42,20 @@ public class SplashActivity  extends Activity {
                     ignored.printStackTrace();
                 }
             }
-        }, 3000);  // Give a 5 seconds delay.
+        }, 5000);  // Give a 5 seconds delay.
+
+        TextView tvLoading = findViewById(R.id.textLoading);
+
+        new CountDownTimer(5000, 500) {
+
+            public void onTick(long millisUntilFinished) {
+                tvLoading.setText("Načítavam DJ Džimo aplikáciu ... " + millisUntilFinished / 1000);
+            }
+
+            public void onFinish() {
+                tvLoading.setText("Hotovo!");
+            }
+        }.start();
     }
 
     @Override
