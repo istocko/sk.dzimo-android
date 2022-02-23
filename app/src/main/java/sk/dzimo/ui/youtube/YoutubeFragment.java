@@ -38,6 +38,9 @@ public class YoutubeFragment extends Fragment {
         });
 
         ActionOpenURLInChrome a = new ActionOpenURLInChrome("https://www.youtube.com/channel/UCzQNBCfsiGL-Ax-LCcluI9Q", binding.urlYoutubeButton, YoutubeFragment.this);
+
+
+
         return root;
     }
 

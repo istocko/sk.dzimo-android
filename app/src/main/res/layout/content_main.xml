@@ -22,7 +22,7 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageContentMain"
         android:layout_width="407dp"
         android:layout_height="341dp"
         android:background="#000000"
