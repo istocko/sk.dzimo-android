@@ -39,7 +39,7 @@ public class EmailFragment extends Fragment {
             }
         });
 
-        ActionOpenURLInChrome a = new ActionOpenURLInChrome("mailto:dj.dzimo@gmail.com", binding.urlEmailButton, EmailFragment.this);
+        ActionOpenURLInChrome a = new ActionOpenURLInChrome("mailto:dj@dzimo.sk", binding.urlEmailButton, EmailFragment.this);
 
 
         return root;
