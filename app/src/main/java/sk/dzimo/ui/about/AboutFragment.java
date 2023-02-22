@@ -39,7 +39,7 @@ public class AboutFragment extends Fragment {
 
         ImageView iv = (ImageView) getActivity().findViewById(R.id.imageContentMain);
         if (iv != null) {
-            iv.setImageResource(R.drawable.about);
+            iv.setImageResource(R.drawable.about3);
         }
 
         return root;
