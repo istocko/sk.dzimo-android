@@ -27,7 +27,11 @@
         android:name="sk.dzimo.ui.playlist.PlaylistFragment"
         android:label="@string/menu_playlist"
         tools:layout="@layout/fragment_playlist" />
-
+    <fragment
+        android:id="@+id/nav_inspiracia"
+        android:name="sk.dzimo.ui.priroda.PrirodaFragment"
+        android:label="@string/menu_inspiracia"
+        tools:layout="@layout/fragment_priroda" />
     <fragment
         android:id="@+id/nav_facebook"
         android:name="sk.dzimo.ui.facebook.FacebookFragment"

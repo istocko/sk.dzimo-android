@@ -37,7 +37,7 @@ public class AboutFragment extends Fragment {
             }
         });
 
-        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageContentMain);
+        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageViewClef);
         if (iv != null) {
             iv.setImageResource(R.drawable.about3);
         }
@@ -48,7 +48,7 @@ public class AboutFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageContentMain);
+        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageViewClef);
         if (iv != null) {
             iv.setImageResource(R.drawable.clef_square);
         }

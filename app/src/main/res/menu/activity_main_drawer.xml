@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_playlist"
             android:title="@string/menu_playlist" />
         <item
+            android:id="@+id/nav_inspiracia"
+            android:icon="@drawable/icon_inspiracia"
+            android:title="@string/menu_inspiracia" />
+        <item
             android:id="@+id/nav_email"
             android:icon="@drawable/ic_email"
             android:title="@string/menu_email" />
