@@ -16,12 +16,53 @@
         android:contentDescription="logo"
         android:rotationX="0"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/topMixTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/dzimo_at_work" />
+
+    <TextView
+        android:id="@+id/topMixTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/topMixNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Top Mix 2023" />
+
+    <TextView
+        android:id="@+id/topMixNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/newPlaysView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20dp"
+        android:text="Mix Name" />
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/newPlaysView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/textLoading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/dzimo_at_work" />
+        android:textColor="@color/red"
+        android:textSize="50dp"
+        android:textStyle="bold"
+
+        />
+
 
     <TextView
         android:id="@+id/textLoading"

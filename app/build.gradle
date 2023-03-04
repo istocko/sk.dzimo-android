@@ -9,8 +9,8 @@ android {
         applicationId "sk.dzimo"
         minSdk 21
         targetSdk 31
-        versionCode 9
-        versionName "9.0.0"
+        versionCode 10
+        versionName "10.0.0"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -44,4 +44,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.guava:guava:22.0-android'
+    implementation 'com.robinhood.ticker:ticker:2.0.4'
 }
