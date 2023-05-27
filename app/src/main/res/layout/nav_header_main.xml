@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:paddingLeft="50px"
             android:paddingTop="50px"
-            android:text="Valentine Edition"
+            android:text="Summer Edition"
             android:textColor="@color/red"
             android:textSize="20sp" />
 
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/valentinerose_foreground" />
+            app:srcCompat="@mipmap/summer2023_foreground" />
 
     </LinearLayout>
 

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
-        binding.appBarMain.fab.setOnClickListener(view -> Snackbar.make(view, "©2023 www.extremesystems.sk", Snackbar.LENGTH_LONG)
+        binding.appBarMain.fab.setOnClickListener(view -> Snackbar.make(view, "©2023 www.dzimo.sk", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_about, R.id.nav_playlist, R.id.nav_inspiracia, R.id.nav_email, R.id.nav_facebook, R.id.nav_youtube, R.id.nav_patreon)
                 //.setOpenableLayout(drawer)
-                .setDrawerLayout(drawer)
+                //.setDrawerLayout(drawer)
+                .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);

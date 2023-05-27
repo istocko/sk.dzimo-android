@@ -25,6 +25,7 @@ public class SoundCloudPlaylist {
     public static String dataResponseJSON = "";
     public static int latestPlaybackCount = playbackCount;
     public static String topMix2023 = "";
+    public static String latestMix = "";
 
     public static void loadPlaylistFromSC(){
         try {
@@ -60,6 +61,9 @@ public class SoundCloudPlaylist {
                                 if (isCreated2023 && plays > topPlays2023){
                                     topPlays2023 = plays;
                                     topMix2023 = track.getJSONObject("data").getString("title");
+                                }
+                                if (latestMix.equals("")) {
+                                    latestMix = track.getJSONObject("data").getString("title");
                                 }
                                 playbackCountSum += plays;
                             }

@@ -46,6 +46,15 @@ public class AboutFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageViewClef);
+        if (iv != null) {
+            iv.setImageResource(R.drawable.about3);
+        }
+        super.onResume();
+    }
+
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         ImageView iv = (ImageView) getActivity().findViewById(R.id.imageViewClef);

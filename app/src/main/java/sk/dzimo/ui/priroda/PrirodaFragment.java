@@ -69,6 +69,20 @@ public class PrirodaFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        ImageView iv = (ImageView) getActivity().findViewById(R.id.imageViewClef);
+        if (iv != null) {
+            iv.setVisibility(View.INVISIBLE);
+        }
+
+        iv = (ImageView) getActivity().findViewById(R.id.imageViewDJDZIMOLOGO);
+        if (iv != null) {
+            iv.setVisibility(View.INVISIBLE);
+        }
+        super.onResume();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

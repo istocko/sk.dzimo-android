@@ -12,9 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.DrawableImageViewTarget;
 import com.robinhood.ticker.TickerUtils;
 import com.robinhood.ticker.TickerView;
 
@@ -23,7 +20,7 @@ public class SplashActivity  extends Activity {
     int lastPlaybackCount = SoundCloudPlaylist.playbackCount;
     boolean newPlaybackCountLoaded = false;
     TickerView tickerView;
-    TextView topMixName, topMixLabel;
+    TextView topMixName, topMixLabel, latestMixName, latestMixLabel;
 
     public void initTickerView(){
         newPlaybackCountLoaded = true;
@@ -32,9 +29,12 @@ public class SplashActivity  extends Activity {
 
 
 
-    public void setVisibleTopMix(boolean visible) {
+    public void setVisibleMixStatistics(boolean visible) {
         topMixLabel.setVisibility(visible?View.VISIBLE:View.INVISIBLE);
         topMixName.setVisibility(visible?View.VISIBLE:View.INVISIBLE);
+        latestMixLabel.setVisibility(visible?View.VISIBLE:View.INVISIBLE);
+        latestMixName.setVisibility(visible?View.VISIBLE:View.INVISIBLE);
+
     }
 
 
@@ -61,7 +61,10 @@ public class SplashActivity  extends Activity {
 
         topMixLabel = (TextView) findViewById(R.id.topMixTextView);
         topMixName = (TextView) findViewById(R.id.topMixNameTextView);
-        setVisibleTopMix(false);
+        latestMixLabel = (TextView) findViewById(R.id.latestMixTextView);
+        latestMixName = (TextView) findViewById(R.id.latestMixNameTextView);
+
+        setVisibleMixStatistics(false);
 
 
 
@@ -106,7 +109,8 @@ public class SplashActivity  extends Activity {
                         }
 
                         topMixName.setText(SoundCloudPlaylist.topMix2023);
-                        setVisibleTopMix(true);
+                        latestMixName.setText(SoundCloudPlaylist.latestMix);
+                        setVisibleMixStatistics(true);
 
                         //loadStr += " new "+(SoundCloudPlaylist.latestPlaybackCount - lastPlaybackCount)+" plays ";
                         loadStr = "Celkovo prehratých mixov";

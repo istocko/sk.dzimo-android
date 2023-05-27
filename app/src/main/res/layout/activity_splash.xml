@@ -9,18 +9,47 @@
     <ImageView
         android:id="@+id/splashScreenImageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:contentDescription="logo"
         android:rotationX="0"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/topMixTextView"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@id/latestMixTextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:srcCompat="@drawable/dzimo_at_work" />
+
+    <TextView
+        android:id="@+id/latestMixTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/latestMixNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Najnovší Mix" />
+
+    <TextView
+        android:id="@+id/latestMixNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/topMixTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20dp"
+        android:text="Mix Name" />
+
 
     <TextView
         android:id="@+id/topMixTextView"
