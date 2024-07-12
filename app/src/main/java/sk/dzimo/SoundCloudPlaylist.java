@@ -20,11 +20,11 @@ import java.util.Iterator;
 
 public class SoundCloudPlaylist {
     public static int playbackCount = 0;
-    public static String urlPlaylist = "https://soundcloud.com/imrich-stolar/sets/dj-d-imo-2023";
+    public static String urlPlaylist = "https://soundcloud.com/imrich-stolar/sets/dj-d-imo-2024";
     public static Activity  activity;
     public static String dataResponseJSON = "";
     public static int latestPlaybackCount = playbackCount;
-    public static String topMix2023 = "";
+    public static String topMix2024 = "";
     public static String latestMix = "";
 
     public static void loadPlaylistFromSC(){
@@ -51,16 +51,16 @@ public class SoundCloudPlaylist {
                         //ss("tracksCount: "+tracks.length());
                         int playbackCountSum = 0;
                         //int tracksCount = 0;
-                        int topPlays2023 = 0 ;
+                        int topPlays2024 = 0 ;
                         while (keys.hasNext()) {
                             //tracksCount++;
                             JSONObject track = tracks.getJSONObject(keys.next());
                             try {
                                 int plays = track.getJSONObject("data").getInt("playback_count");
-                                boolean isCreated2023 = track.getJSONObject("data").getString("created_at").startsWith("2023-");
-                                if (isCreated2023 && plays > topPlays2023){
-                                    topPlays2023 = plays;
-                                    topMix2023 = track.getJSONObject("data").getString("title");
+                                boolean isCreated2024 = track.getJSONObject("data").getString("created_at").startsWith("2024-");
+                                if (isCreated2024 && plays > topPlays2024){
+                                    topPlays2024 = plays;
+                                    topMix2024 = track.getJSONObject("data").getString("title");
                                 }
                                 if (latestMix.equals("")) {
                                     latestMix = track.getJSONObject("data").getString("title");

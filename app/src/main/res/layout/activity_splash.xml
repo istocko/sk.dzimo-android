@@ -1,108 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black">
+<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/black">
 
     <ImageView
-        android:id="@+id/splashScreenImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:contentDescription="logo"
-        android:rotationX="0"
-        android:visibility="visible"
-        android:background="@drawable/border"
-        app:layout_constraintBottom_toTopOf="@id/latestMixTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/dzimo_at_work" />
+         android:layout_height="300dp"
+         android:layout_width="wrap_content"
+         android:visibility="visible"
+         android:layout_marginEnd="24dp"
+         tools:srcCompat="@drawable/dzimo_at_work"
+         app:layout_constraintHorizontal_bias="0.492"
+         android:layout_marginStart="24dp"
+         app:layout_constraintBottom_toTopOf="@id/latestMixTextView"
+         tools:ignore="MissingConstraints"
+         android:layout_marginBottom="24dp"
+         android:contentDescription="logo"
+         android:background="@drawable/border"
+         android:rotationX="0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:id="@+id/splashScreenImageView" />
 
     <TextView
-        android:id="@+id/latestMixTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/red"
-        app:layout_constraintBottom_toTopOf="@+id/latestMixNameTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:text="Najnovší Mix" />
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="20dp"
+         android:textColor="@color/red"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toTopOf="@+id/latestMixNameTextView"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/latestMixTextView"
+         android:textStyle="bold"
+         android:text="Najnovší Mix" />
 
     <TextView
-        android:id="@+id/latestMixNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/topMixTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="25dp"
-        tools:ignore="MissingConstraints"
-        android:layout_marginBottom="20dp"
-        android:text="Mix Name" />
-
-
-    <TextView
-        android:id="@+id/topMixTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/red"
-        app:layout_constraintBottom_toTopOf="@+id/topMixNameTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:text="Top Mix 2023" />
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="20dp"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="25dp"
+         android:textColor="@color/white"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toTopOf="@+id/topMixTextView"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/latestMixNameTextView"
+         android:text="Mix Name" />
 
     <TextView
-        android:id="@+id/topMixNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/newPlaysView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="25dp"
-        tools:ignore="MissingConstraints"
-        android:layout_marginBottom="20dp"
-        android:text="Mix Name" />
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="20dp"
+         android:textColor="@color/red"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toTopOf="@+id/topMixNameTextView"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/topMixTextView"
+         android:textStyle="bold"
+         android:text="Top Mix 2024" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="20dp"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="25dp"
+         android:textColor="@color/white"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toTopOf="@+id/newPlaysView"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/topMixNameTextView"
+         android:text="Mix Name" />
 
     <com.robinhood.ticker.TickerView
-        android:id="@+id/newPlaysView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textLoading"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/red"
-        android:textSize="50dp"
-        android:textStyle="bold"
-
-        />
-
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="16dp"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="50dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:textColor="@color/red"
+         app:layout_constraintBottom_toTopOf="@+id/textLoading"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/newPlaysView"
+         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="loading text"
-        android:text="Načítavam DJ Džimo aplikáciu"
-        android:textColor="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="16dp"
+         android:contentDescription="loading text"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textColor="@color/red"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         tools:ignore="MissingConstraints"
+         android:id="@+id/textLoading"
+         android:text="Načítavam DJ Džimo aplikáciu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

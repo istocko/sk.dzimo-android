@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/sk.dzimo-android/build.gradle",
+      "selection": {
+        "end": {
+          "column": 53,
+          "index": 251,
+          "line": 7
+        },
+        "start": {
+          "column": 53,
+          "index": 251,
+          "line": 7
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/sk.dzimo-android/build.gradle"
+}
