@@ -5,6 +5,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Looper;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
@@ -16,7 +17,7 @@ import com.robinhood.ticker.TickerUtils;
 import com.robinhood.ticker.TickerView;
 
 public class SplashActivity  extends Activity {
-    private Handler mWaitHandler = new Handler();
+    private final Handler mWaitHandler = new Handler(Looper.myLooper());
     int lastPlaybackCount = SoundCloudPlaylist.playbackCount;
     boolean newPlaybackCountLoaded = false;
     TickerView tickerView;
