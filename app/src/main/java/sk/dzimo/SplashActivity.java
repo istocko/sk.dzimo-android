@@ -109,7 +109,7 @@ public class SplashActivity  extends Activity {
                             tickerView.setText(""+newest);
                         }
 
-                        topMixName.setText(SoundCloudPlaylist.topMix2024);
+                        topMixName.setText(SoundCloudPlaylist.topMix2025);
                         latestMixName.setText(SoundCloudPlaylist.latestMix);
                         setVisibleMixStatistics(true);
 

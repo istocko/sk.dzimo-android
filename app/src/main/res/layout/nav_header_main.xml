@@ -47,7 +47,7 @@
             android:layout_weight="1"
             android:paddingLeft="50px"
             android:paddingTop="50px"
-            android:text="2024 Edition"
+            android:text="2025 Edition"
             android:textColor="@color/red"
             android:textSize="20sp" />
 

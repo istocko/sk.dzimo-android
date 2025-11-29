@@ -1,8 +1,6 @@
 package sk.dzimo;
 
 import android.app.Activity;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -24,7 +22,7 @@ public class SoundCloudPlaylist {
     public static Activity  activity;
     public static String dataResponseJSON = "";
     public static int latestPlaybackCount = playbackCount;
-    public static String topMix2024 = "";
+    public static String topMix2025 = "";
     public static String latestMix = "";
 
     public static void loadPlaylistFromSC(){
@@ -60,7 +58,7 @@ public class SoundCloudPlaylist {
                                 boolean isCreated2024 = track.getJSONObject("data").getString("created_at").startsWith("2024-");
                                 if (isCreated2024 && plays > topPlays2024){
                                     topPlays2024 = plays;
-                                    topMix2024 = track.getJSONObject("data").getString("title");
+                                    topMix2025 = track.getJSONObject("data").getString("title");
                                 }
                                 if (latestMix.equals("")) {
                                     latestMix = track.getJSONObject("data").getString("title");

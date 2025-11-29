@@ -62,7 +62,7 @@
          tools:ignore="MissingConstraints"
          android:id="@+id/topMixTextView"
          android:textStyle="bold"
-         android:text="Top Mix 2024" />
+         android:text="Top Mix 2025" />
 
     <TextView
          android:layout_height="wrap_content"
