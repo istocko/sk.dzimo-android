@@ -13,23 +13,21 @@
         android:theme="@style/Theme.DJDZIMO">
 
         <activity
-            android:name=".SplashActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name"
-            >
+                android:name=".testAPI"
+                android:exported="true"
+                android:label="TEST DIAGNOSTIKA"
+                android:theme="@style/Theme.DJDZIMO">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".testAPI"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.DJDZIMO.NoActionBar">
-           
+                android:name=".SplashActivity"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name">
         </activity>
         <activity
             android:name=".MainActivity"
