@@ -57,4 +57,11 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish(); // Toto zabezpečí, že aplikácia sa "vypne", keď ju minimalizuješ.
+        // Pri ďalšom kliknutí na ikonku pôjde opäť cez SplashActivity.
+    }
 }

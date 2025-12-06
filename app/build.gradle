@@ -12,8 +12,8 @@ android {
         applicationId "sk.dzimo"
         minSdk 30
         targetSdk 33
-        versionCode 14
-        versionName "2025.1"
+        versionCode 15
+        versionName "2025.2"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }

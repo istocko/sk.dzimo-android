@@ -49,15 +49,15 @@ public class SoundCloudPlaylist {
                         //ss("tracksCount: "+tracks.length());
                         int playbackCountSum = 0;
                         //int tracksCount = 0;
-                        int topPlays2024 = 0 ;
+                        int topPlays2025 = 0 ;
                         while (keys.hasNext()) {
                             //tracksCount++;
                             JSONObject track = tracks.getJSONObject(keys.next());
                             try {
                                 int plays = track.getJSONObject("data").getInt("playback_count");
-                                boolean isCreated2024 = track.getJSONObject("data").getString("created_at").startsWith("2024-");
-                                if (isCreated2024 && plays > topPlays2024){
-                                    topPlays2024 = plays;
+                                boolean isCreated2025 = track.getJSONObject("data").getString("created_at").startsWith("2025-");
+                                if (isCreated2025 && plays > topPlays2025){
+                                    topPlays2025 = plays;
                                     topMix2025 = track.getJSONObject("data").getString("title");
                                 }
                                 if (latestMix.equals("")) {
