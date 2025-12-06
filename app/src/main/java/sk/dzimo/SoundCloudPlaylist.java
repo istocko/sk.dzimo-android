@@ -18,7 +18,7 @@ import java.util.Iterator;
 
 public class SoundCloudPlaylist {
     public static int playbackCount = 0;
-    public static String urlPlaylist = "https://soundcloud.com/imrich-stolar/sets/dj-d-imo-2024";
+    public static String urlPlaylist = "https://soundcloud.com/dj-dzimo/sets/dj-d-imo-2025";
     public static Activity  activity;
     public static String dataResponseJSON = "";
     public static int latestPlaybackCount = playbackCount;
